@@ -9,8 +9,6 @@
 
     - name: Build Docker Image
       command: docker build -t pipeline .
-      args:
-        chdir: /var/lib/jenkins/workspace/pipeline
 
     - name: tag image
       command: docker tag pipeline:latest virat/pipeline:latest
